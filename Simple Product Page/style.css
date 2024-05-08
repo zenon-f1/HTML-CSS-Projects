@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.header h1 {
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.header span {
+    color: brown;
+    padding-left: 1px;
+}
+
+.header p {
+    text-align: center;
+    letter-spacing: 0.5px;
+    padding-top: 10px;
+}
+
+.header p span {
+    color: lightseagreen;
+}
+
+.header p .brown {
+    color: brown;
+}
+
+.container {
+    width: 90%;
+    margin: 2rem auto;
+    background-color: rgb(231, 230, 229);
+    padding: 20px 0;
+}
+
+.container .rows {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rows .cols {
+    flex-basis: 23%;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.cols .image img {
+    width: 100%;
+}
+
+.cols .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 0.5px;
+}
+
+.details .btn button {
+    margin-top: 8px;
+    padding: 8px 24px;
+    border: none;
+    background-color: #222;
+    color: #fff;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border: 1px solid #222;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 20px -5px, rgba(0, 0, 0, 0.3) 0px 8px 12px -8px;
+    transition: 0.1s;
+}
+
+.details .btn button i {
+    padding-right: 5px;
+}
+
+.details .btn button:hover {
+    color: #222;
+    background-color: #fff;
+}
+
+.details span {
+    color: lightseagreen;
+}
+
+.details p {
+    padding-top: 2px;
+}
+
+.details #star {
+    color: #fcbd01;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding-top: 10px;
+    }
+
+    .rows {
+        flex-direction: column;
+        padding: 0 1rem 0;
+
+    }
+
+    .rows .cols {
+        margin-top: 1rem;
+    }
+}
