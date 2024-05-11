@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343434;
+    padding: 0.6rem 4rem;
+}
+
+.navbar .left-nav {
+    display: flex;
+}
+
+.left-nav ul {
+    display: flex;
+    gap: 3rem;
+}
+
+.left-nav ul li a {
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.left-nav ul li a:hover {
+    color: crimson;
+}
+
+.navbar .right-nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.right-nav .input input {
+    padding: 0.3rem 3rem;
+    border-radius: 5px;
+    border: 1px solid #222;
+    background-color: #fff;
+}
+
+.input input::placeholder {
+    color: #222;
+    letter-spacing: 0.5px;
+}
+
+.nav-btn .btn {
+    padding: 8px 20px;
+    border: none;
+    letter-spacing: 0.5px;
+    background-color: #fff;
+    color: #222;
+}
+
+.nav-btn .btn:hover {
+    color: crimson;
+}
+
+.product-dropdown {
+    display: inline-block;
+    position: absolute;
+
+}
+
+.product-dropdown button {
+    margin-left: 2px;
+}
+
+.product-dropdown:hover .product-content {
+    display: block;
+}
+
+.product-dropdown button i {
+    padding: 2px;
+    color: #222;
+}
+
+.product-content {
+    display: none;
+}
+
+.product-content a {
+    display: block;
+    padding: 10px 18px;
+    background-color: #343434;
+}
+
+.product-content a:hover {
+    background-color: #222;
+}
